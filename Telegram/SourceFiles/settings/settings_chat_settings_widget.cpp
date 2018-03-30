@@ -154,7 +154,7 @@ void ChatSettingsWidget::createControls() {
 	style::margins slidedPadding(0, marginSub.bottom() / 2, 0, marginSub.bottom() - (marginSub.bottom() / 2));
 
 	addChildRow(_replaceEmoji, marginSkip, lang(lng_settings_replace_emojis), [this](bool) { onReplaceEmoji(); }, cReplaceEmojis());
-	addChildRow(_messageFormat, marginSkip, lang(lng_settings_message_formatting), [this](bool) { toggleMessageFormat(); }, cMessageFormatting());
+	addChildRow(_messageFormat, marginSmall, lang(lng_settings_message_formatting), [this](bool) { toggleMessageFormat(); }, cMessageFormatting());
 
 #ifndef OS_WIN_STORE
 	auto pathMargin = marginSub;
